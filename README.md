@@ -7,7 +7,7 @@
 ## Instalación (Kali Linux, Termux & Ubuntu):
 
 ```
-git clone https://github.com/jaykali/maskphish
-cd maskphish
-bash maskphish.sh
+git clone https://github.com/darka11hb/FakeUrl
+cd FakeUrl
+bash fakeurl.sh
 ```
