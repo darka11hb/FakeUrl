@@ -9,24 +9,13 @@ url_checker() {
     fi
 }
 
-echo -e "\e[1;35;35m███████╗ █████╗ ██╗  ██╗███████╗  \e[0m"   
-echo -e "\e[1;35;35m██╔════╝██╔══██╗██║ ██╔╝██╔════╝  \e[0m"
-echo -e "\e[1;35;35m█████╗  ███████║█████╔╝ █████╗    \e[0m"
-echo -e "\e[1;35;35m██╔══╝  ██╔══██║██╔═██╗ ██╔══╝    \e[0m"
-echo -e "\e[1;35;35m██║     ██║  ██║██║  ██╗███████╗  \e[0m"
-echo -e "\e[1;35;35m╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝  \e[0m"
-echo -e "\e[1;35;35m   ██    ██ ██████  ██            \e[0m"
-echo -e "\e[1;35;35m   ██    ██ ██   ██ ██            \e[0m"
-echo -e "\e[1;35;35m   ██    ██ ██████  ██            \e[0m"
-echo -e "\e[1;35;35m   ██    ██ ██   ██ ██            \e[0m"
-echo -e "\e[1;35;35m    ██████  ██   ██ ███████       \e[0m"
-echo -e "\e[1;35;35m By:         Norahc               \e[0m"                                              
+echo -e "\e[1;35;35m By:         Kript0n               \e[0m"                                              
 echo -e "\e[1;35;35m ### Mascara de URL ###\e[0m \n"
 echo -n "Pegué la URL a Suplantar (Con http o https): "
 read phish
 url_checker $phish
 sleep 1
-echo "Processing and Modifing Phishing URL"
+echo "Procesando y Modificando Phishing URL"
 echo ""
 short=$(curl -s https://is.gd/create.php\?format\=simple\&url\=${phish})
 shorter=${short#https://}
@@ -36,7 +25,7 @@ echo 'Dominio para enmascarar la URL (with http or https), ex: https://google.co
 echo -en "\e[32m=>\e[0m "
 read mask
 url_checker $mask
-echo -e '\nPalabras de ingeniería Social:(like free-money, best-pubg-tricks)'
+echo -e '\nPalabras de Claves:(like free-money, best-pubg-tricks)'
 echo -e "\e[31mNo usar Espacios solo usa '-' Entre las palabras claves\e[0m"
 echo -en "\e[32m=>\e[0m "
 read words
